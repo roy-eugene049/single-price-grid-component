@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 700px;
+    height: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.upper {
+    grid-column-start: span 2;
+
+}
+
+.upper h3 {
+    color: hsl(71, 73%, 54%);
+    padding-left: 30px;
+}
+
+.upper p {
+    color: hsl(218, 22%, 67%);
+    padding-left: 30px;
+    padding-top: 10px;
+    line-height: 1.5;
+    padding-right: 60px;
+}
+
+.lower-left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2, 3;
+    background-color: hsl(179, 62%, 43%);
+    width: 100%;
+}
+
+.lower-right {
+    grid-column: 2, 3;
+    grid-row: 2, 3;
+    background-color: hsl(179, 72%, 52%);
+}
+
+.upper h1 {
+    color: hsl(179, 62%, 43%);
+    align-self: center;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.lower-left h2 {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.subscription-price {
+    color: white;
+    padding-left: 30px;
+    font-size: 2.5rem;
+}
+
+.month {
+    color: antiquewhite;
+}
+
+.lower-left p {
+    padding-left: 30px;
+    color: rgb(240, 238, 238);
+    padding-top: 15px;
+    padding-bottom: 30px;
+    width: 300px;
+}
+
+
+.lower--left-button {
+    background-color: hsl(71, 73%, 54%);
+    text-align: center;
+    color: white;
+    width: 300px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 30px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.lower-right h2 {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.services {
+    padding-left: 30px;
+    list-style-type: none;
+    line-height: 1.5;
+    color: rgb(252, 244, 233);
+}
+
+.lower--left-button:hover {
+    color: hsl(71, 83%, 38%);
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        width: 100%;
+        display: block;
+        padding-right: 10px;
+        margin: 0 auto;
+    }
+    .lower-left {
+        margin: 0 auto;
+    }
+    .lower-right {
+        margin: 0 auto;
+    }
+}
