@@ -124,17 +124,12 @@ body {
     color: hsl(71, 83%, 38%);
 }
 
-@media screen and (max-width: 750px) {
+@media (max-width: 750px) {
     .container {
-        width: 100%;
-        display: block;
-        padding-right: 10px;
-        margin: 0 auto;
-    }
-    .lower-left {
-        margin: 0 auto;
-    }
-    .lower-right {
-        margin: 0 auto;
+        max-width: 21rem;
+        grid-template-areas: 
+            'upper upper'
+            'lower-left lower-left'
+            'lower-right lower-right'
     }
 }
